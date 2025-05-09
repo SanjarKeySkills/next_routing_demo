@@ -3,4 +3,11 @@ export default async function ProductDetails({
 }: {
     params: Promise<{ productId: string; reviewId: string }>;
     // здесь productId: и reviewId: корреспондируют с папкой [productId] и [reviewId] в динамике
-}) {}
+}) {
+    const { productId, reviewId } = await params;
+    return (
+        <h1>
+            Review {reviewId} for product {productId}
+        </h1>
+    );
+}
