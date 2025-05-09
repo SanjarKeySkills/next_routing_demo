@@ -1,3 +1,3 @@
-export default function Home() {
-    return <h1>Second blog spot</h1>;
+export default function Blog() {
+    return <h1>Blog spot list</h1>;
 }
