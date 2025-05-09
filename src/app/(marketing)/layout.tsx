@@ -10,14 +10,14 @@ export default function MarketingLayout({
 }) {
     return (
         <html lang="en">
-            <header
-                style={{
-                    backgroundColor: "lightblue",
-                    padding: "1rem",
-                }}>
-                <p>Header</p>
-            </header>
             <body>
+                <header
+                    style={{
+                        backgroundColor: "lightblue",
+                        padding: "1rem",
+                    }}>
+                    <p>Header</p>
+                </header>
                 {children}
                 <footer
                     style={{
