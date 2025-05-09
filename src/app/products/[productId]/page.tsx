@@ -1,5 +1,5 @@
-// [] - динамический сегмент, где будут отображаться данные через пропс params. Это и есть динамический роутинг
-// Динамический сегмент [productId] означает, что этот файл обрабатывает путь вида /products/:productId
+// [] - динамический сегмент, где будут отображаться данные через пропс params. Это и есть динамический роутинг,
+// этот файл обрабатывает путь вида /products/:productId
 export default async function ProductDetails({
     // здесь ставим async (так как вытаскиваем id по каждому товару)
     params,
@@ -11,5 +11,4 @@ export default async function ProductDetails({
     const productId = (await params).productId;
     // Мы дожидаемся, когда params "разрешится", и вытаскиваем из него productId
     return <h1>Details about products {productId}</h1>;
-    // и здесь от params: Promise в productId будет меняться число в зависимости от индекса
 }
