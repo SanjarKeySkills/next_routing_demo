@@ -5,6 +5,7 @@ export default async function ProductDetails({
     // здесь productId: и reviewId: корреспондируют с папкой [productId] и [reviewId] в динамике
 }) {
     const { productId, reviewId } = await params;
+    // деструктуризуется { productId, reviewId }
     return (
         <h1>
             Review {reviewId} for product {productId}
