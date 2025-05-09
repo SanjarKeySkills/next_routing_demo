@@ -1,3 +1,3 @@
 export default function LineChart() {
-    return <h1>Line Chart</h1>;
+    return <h1>Line chart</h1>;
 }
