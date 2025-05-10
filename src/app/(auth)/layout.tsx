@@ -11,10 +11,17 @@ export default function AuthLayout({
     return (
         <html lang="en">
             <body>
+                <header
+                    style={{
+                        backgroundColor: "aqua",
+                        padding: "1rem",
+                    }}>
+                    <p>This is header</p>
+                </header>
                 {children}
                 <footer
                     style={{
-                        backgroundColor: "#9db3c8",
+                        backgroundColor: "yellowgreen",
                         padding: "1rem",
                     }}>
                     <p>Footer</p>
