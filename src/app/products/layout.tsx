@@ -9,25 +9,15 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
-            <body>
-                <div
-                    style={{
-                        backgroundColor: "Yellow",
-                        padding: "1rem",
-                    }}>
-                    <p
-                        style={{
-                            color: "blue",
-                            fontWeight: "bold",
-                        }}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Officiis voluptatem quas quaerat!
-                    </p>
-                </div>
-
-                {children}
-            </body>
-        </html>
+        <>
+            <header
+                style={{
+                    backgroundColor: "green",
+                    padding: "1rem",
+                }}>
+                <p>I am header for Product List</p>
+            </header>
+            {children}
+        </>
     );
 }
