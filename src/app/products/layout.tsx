@@ -11,13 +11,15 @@ export default function RootLayout({
     return (
         <>
             <header
-                style={{
-                    backgroundColor: "green",
-                    padding: "1rem",
-                }}>
-                <p>I am header for Product List</p>
+            // style={{
+            //     backgroundColor: "green",
+            //     padding: "1rem",
+            // }}
+            >
+                {/* <p>I am header for Product List</p> */}
             </header>
             {children}
+            <p>Do it</p>
         </>
     );
 }

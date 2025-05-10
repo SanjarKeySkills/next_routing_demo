@@ -16,7 +16,7 @@ export default function AuthLayout({
                         backgroundColor: "aqua",
                         padding: "1rem",
                     }}>
-                    <p>This is header</p>
+                    <p>This is header for auth</p>
                 </header>
                 {children}
                 <footer
@@ -24,7 +24,7 @@ export default function AuthLayout({
                         backgroundColor: "yellowgreen",
                         padding: "1rem",
                     }}>
-                    <p>Footer</p>
+                    <p>Footer for auth</p>
                 </footer>
             </body>
         </html>

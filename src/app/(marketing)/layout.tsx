@@ -13,18 +13,18 @@ export default function MarketingLayout({
             <body>
                 <header
                     style={{
-                        backgroundColor: "lightblue",
+                        backgroundColor: "Violet",
                         padding: "1rem",
                     }}>
-                    <p>Header</p>
+                    <p>Header for market</p>
                 </header>
                 {children}
                 <footer
                     style={{
-                        backgroundColor: "Green",
+                        backgroundColor: "Yellow",
                         padding: "1rem",
                     }}>
-                    <p>Footer</p>
+                    <p>Footer for market</p>
                 </footer>
             </body>
         </html>
