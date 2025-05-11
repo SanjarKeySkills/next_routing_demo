@@ -19,7 +19,7 @@ export default function RootLayout({
                 {/* <p>I am header for Product List</p> */}
             </header>
             {children}
-            <p>Do it</p>
+            {/* <p>Do it</p> */}
         </>
     );
 }
