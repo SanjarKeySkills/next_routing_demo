@@ -5,6 +5,7 @@ export const metadata = {
 };
 
 export default function ProductList() {
+    const productId = 100;
     return (
         <>
             <Link href="/">Home</Link>
@@ -17,6 +18,9 @@ export default function ProductList() {
             </h2>
             <h2>
                 <Link href="/products/3"> Product 3</Link>
+            </h2>
+            <h2>
+                <Link href={`/products/${productId}`}>{productId}</Link>
             </h2>
         </>
     );
