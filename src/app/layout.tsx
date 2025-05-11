@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 // metadata - загрзука
+import "./globals.css";
 
 export const metadata: Metadata = {
     title: {

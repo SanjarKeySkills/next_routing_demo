@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "./styles.css";
+// import "./styles.css";
 
 const navLinks = [
     { name: "Register", href: "/register" },
@@ -39,18 +39,16 @@ export default function AuthLayout({
     );
 }
 //  <header
-//                     style={{
-//                         backgroundColor: "aqua",
-//                         padding: "1rem",
-//                     }}>
-//                     <p>This is header for auth</p>
-{
-    /* </header> */
-}
-//    <footer
+//   style={{
+//     backgroundColor: "aqua",
+//     padding: "1rem",
+//     }}>
+//     <p>This is header for auth</p>
+//     </header>
+//     <footer
 //     style={{
-//         backgroundColor: "yellowgreen",
-//         padding: "1rem",
+//     backgroundColor: "yellowgreen",
+//     padding: "1rem",
 //     }}>
 //     <p>Footer for auth</p>
 // </footer>
