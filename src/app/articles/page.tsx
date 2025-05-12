@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export default function NewsArticle() {
+export default function NewsArticle({
+    params,
+    searchParams,
+}: {
+    params: Promise<{ artilceId: string }>;
+}) {
     return (
         <div>
             <h1>News article id</h1>
