@@ -1,4 +1,5 @@
 import Link from "next/link";
+// params & search params
 
 export default async function NewsArticle({
     params,
