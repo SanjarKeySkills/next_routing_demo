@@ -5,6 +5,7 @@ export default function NewsArticle({
     searchParams,
 }: {
     params: Promise<{ artilceId: string }>;
+    searchParams: Promise<{ lang?: "en" | "es" | "fr" }>;
 }) {
     return (
         <div>
