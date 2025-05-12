@@ -1,15 +1,20 @@
-import Link from "next/link";
 // params & search params
+"use client";
+import Link from "next/link";
+import { use } from "react";
 
-export default async function NewsArticle({
+export default function NewsArticle({
     params,
     searchParams,
-}: {
+}: // здесь парам в виде промиса разрешающих объекты с динамическими роутами параметров (Айди)
+// searchParams здесь промис который разрешает объект содержащий очредность параметров (фильры и отбор)
+// при том что имея доступ как в парамс так и searchParams лэй ауты имею доступ только к парамс
+{
     params: Promise<{ artilceId: string }>;
     searchParams: Promise<{ lang?: "en" | "es" | "fr" }>;
 }) {
-    const { artilceId } = await params;
-    const { lang = "en" } = await searchParams;
+    const { artilceId } = use(params);
+    const { lang = "en" } = use(searchParams);
     return (
         <div>
             <h1>News article {artilceId}</h1>
