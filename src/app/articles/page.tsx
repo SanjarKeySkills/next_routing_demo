@@ -7,6 +7,7 @@ export default function NewsArticle() {
             <p>Reading in language</p>
             <div>
                 <Link href="/articles/id?lang=en">English</Link>
+                <Link href="/articles/id?lang=es">Spanish</Link>
             </div>
         </div>
     );
