@@ -11,8 +11,8 @@ export default async function NewsArticle({
     const { lang = "en" } = await searchParams;
     return (
         <div>
-            <h1>News article id</h1>
-            <p>Reading in language</p>
+            <h1>News article {artilceId}</h1>
+            <p>Reading in {lang} </p>
             <div>
                 <Link href={`/articles/${artilceId}?lang=en`}>English</Link>
                 <Link href={`/articles/${artilceId}?lang=es`}>Spanish</Link>
