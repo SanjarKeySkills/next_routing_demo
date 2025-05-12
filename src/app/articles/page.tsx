@@ -7,6 +7,8 @@ export default function NewsArticle({
     params: Promise<{ artilceId: string }>;
     searchParams: Promise<{ lang?: "en" | "es" | "fr" }>;
 }) {
+    const { articleId } = await params;
+    const { lang = "en" } = await searchParams;
     return (
         <div>
             <h1>News article id</h1>
