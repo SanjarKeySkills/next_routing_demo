@@ -1,3 +1,4 @@
+"use client";
 import { useRouter } from "next/navigation";
 
 export default function OrderProduct() {
@@ -7,9 +8,16 @@ export default function OrderProduct() {
         router.push("/");
     };
     return (
-        <>
-            <h1>Order product</h1>;
+        <div
+            style={{
+                display: "flex",
+                justifyContent: "flex-start",
+                flexDirection: "row",
+                gap: "24px",
+                padding: "16px 0",
+            }}>
+            <h1>Order product</h1>
             <button onClick={handleClick}>Place order</button>
-        </>
+        </div>
     );
 }
