@@ -9,6 +9,7 @@ export default async function ProductReview({
     const { productId, reviewId } = await params;
     if (parseInt(reviewId) > 1000) {
         // notFound();
+        // changet for redirections
         redirect("/products");
     }
     return (
