@@ -13,7 +13,7 @@ export default function Home() {
             <div
                 style={{
                     display: "flex",
-                    justifyContent: "space-between",
+                    justifyContent: "center",
                     flexDirection: "row",
                     gap: "24px",
                 }}>
