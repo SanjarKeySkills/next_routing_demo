@@ -10,17 +10,33 @@ export default function Home() {
                 fontWeight: "bold",
             }}>
             <h2>Welcome home!</h2>
-            <Link href="/blog">Blog</Link>
-            <Link href="/products">Products</Link>
-            <Link href="/articles/breaking-news-123?lang=en">
-                Read in English
-            </Link>
-            <Link href="/articles/breaking-news-123?lang=es">
-                Read in Spanish
-            </Link>
-            <Link href="/articles/breaking-news-123?lang=fr">
-                Read in French
-            </Link>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    flexDirection: "row",
+                    gap: "24px",
+                }}>
+                <Link href="/blog">Blog</Link>
+                <Link href="/products">Products</Link>
+            </div>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    gap: "16px",
+                }}>
+                <Link href="/articles/breaking-news-123?lang=en">
+                    Read in English
+                </Link>
+                <Link href="/articles/breaking-news-123?lang=es">
+                    Read in Spanish
+                </Link>
+                <Link href="/articles/breaking-news-123?lang=fr">
+                    Read in French
+                </Link>
+            </div>
         </div>
     );
 }

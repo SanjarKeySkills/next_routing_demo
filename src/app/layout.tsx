@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 // metadata - загрзука
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function MainLayout({
                         fontWeight: "bold",
                     }}>
                     <p>Main Header</p>
+                    <Link href="/">Home</Link>
                 </header>
                 {children}
                 <footer

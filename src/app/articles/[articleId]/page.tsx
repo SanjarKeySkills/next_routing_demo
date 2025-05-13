@@ -17,13 +17,35 @@ export default function NewsArticle({
     const { lang = "en" } = use(searchParams);
     return (
         <div>
+            <Link href="/">Home</Link>
             <h1>News article {artilceId}</h1>
             <p>Reading in {lang} </p>
-            <div>
-                <Link href={`/articles/${artilceId}?lang=en`}>English</Link>
-                <Link href={`/articles/${artilceId}?lang=es`}>Spanish</Link>
-                <Link href={`/articles/${artilceId}?lang=fr`}>French</Link>
-            </div>
+            <ul
+                style={{
+                    backgroundColor: "lightblue",
+                    padding: "0.2rem",
+                    color: "Green",
+                    fontWeight: "bold",
+                }}>
+                <li
+                    style={{
+                        padding: "16px 0",
+                    }}>
+                    <Link href={`/articles/${artilceId}?lang=en`}>English</Link>
+                </li>
+                <li
+                    style={{
+                        padding: "16px 0",
+                    }}>
+                    <Link href={`/articles/${artilceId}?lang=es`}>Spanish</Link>
+                </li>
+                <li
+                    style={{
+                        padding: "16px 0",
+                    }}>
+                    <Link href={`/articles/${artilceId}?lang=fr`}>French</Link>
+                </li>
+            </ul>
         </div>
     );
 }
