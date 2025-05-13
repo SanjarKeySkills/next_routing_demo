@@ -13,6 +13,16 @@ export default function Home() {
             <div
                 style={{
                     display: "flex",
+                    justifyContent: "flex-start",
+                    flexDirection: "row",
+                    gap: "24px",
+                }}>
+                <Link href="/register">Register</Link>
+                <Link href="/login">Login</Link>
+            </div>
+            <div
+                style={{
+                    display: "flex",
                     justifyContent: "center",
                     flexDirection: "row",
                     gap: "24px",

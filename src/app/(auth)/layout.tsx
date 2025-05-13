@@ -1,9 +1,7 @@
 "use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import "./styles.css";
 
 const navLinks = [
     { name: "Register", href: "/register" },
@@ -31,12 +29,19 @@ export default function AuthLayout({
                     pathname === link.href ||
                     (pathname.startsWith(link.href) && link.href !== "/");
                 return (
-                    <Link href={link.href} key={link.name}>
-                        {link.name}
-                    </Link>
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "flex-start",
+                            flexDirection: "row",
+                        }}>
+                        <Link href={link.href} key={link.name}>
+                            {link.name}
+                        </Link>
+                    </div>
                 );
             })}
-            <Link href="/">Home</Link>
+
             {children}
         </div>
     );
