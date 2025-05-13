@@ -7,6 +7,7 @@ export default function OrderProduct() {
         console.log("Placing your order");
         router.push("/");
         // send you to the main
+        // .back .forward - ways
     };
     return (
         <div
