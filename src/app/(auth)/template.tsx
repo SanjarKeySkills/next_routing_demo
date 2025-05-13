@@ -37,9 +37,11 @@ export default function AuthLayout({
                             justifyContent: "flex-start",
                             flexDirection: "row",
                         }}>
-                        <Link href={link.href} key={link.name}>
-                            {link.name}
-                        </Link>
+                        <div>
+                            <Link href={link.href} key={link.name}>
+                                {link.name}
+                            </Link>
+                        </div>
                     </div>
                 );
             })}
