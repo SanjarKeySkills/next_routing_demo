@@ -23,6 +23,8 @@ export default function AuthLayout({
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                 />
+                {/* Здесь сохранен темплейт который не меняется. но в отличие от лэйаута все элементы запускаются 
+				заново кроме темплейта */}
             </div>
             {navLinks.map((link) => {
                 const isActive =
