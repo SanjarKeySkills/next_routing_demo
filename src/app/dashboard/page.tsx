@@ -3,7 +3,7 @@ function BarChart() {
 }
 
 export default function Dashboard() {
-    return <h1>Dashboard</h1>;
+    return <p>Dashboard</p>;
 }
 
 // можно использовать один и тот же компонент в разных частях приложения без необходимости дублировать код.
