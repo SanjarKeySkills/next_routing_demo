@@ -30,6 +30,7 @@ export default function Home() {
                 <Link href="/blog">Blog</Link>
                 <Link href="/products">Products</Link>
                 <Link href="/order-product">Order Product</Link>
+                <Link href="/order-product">Order Product2</Link>
             </div>
             <div
                 style={{
