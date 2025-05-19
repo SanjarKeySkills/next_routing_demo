@@ -7,11 +7,16 @@ export const metadata: Metadata = {
     },
 };
 
-export default function Blog() {
+export default async function Blog() {
+    await new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("international delay");
+        }, 2000);
+    });
     return (
         <div className="container">
             <Link href="/">Home</Link>
-            <h1>Blog spot list</h1>;
+            <h1>Blog spot list</h1>
         </div>
     );
 }
