@@ -16,7 +16,9 @@ export default async function Blog() {
     return (
         <div className="container">
             <Link href="/">Home</Link>
-            <h1>Blog spot list</h1>
+            {/* <h1>Blog spot list</h1>
+             */}
+            <p>Lorem, ipsum dolor.</p>
         </div>
     );
 }
