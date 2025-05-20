@@ -1,24 +1,13 @@
-// import { redirect } from "next/dist/server/api-utils";
-import { notFound, redirect } from "next/navigation";
-
-function getRandomInt(count: number) {
-    return Math.floor(Math.random() * count);
-}
+import { notFound } from "next/navigation";
 
 export default async function ProductReview({
     params,
 }: {
     params: Promise<{ productId: string; reviewId: string }>;
 }) {
-    const random = getRandomInt(2);
-    if (random === 1) {
-        throw new Error("Error loading review");
-    }
     const { productId, reviewId } = await params;
     if (parseInt(reviewId) > 1000) {
-        // notFound();
-        // changet for redirections
-        redirect("/products");
+        notFound();
     }
     return (
         <h1>
