@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 // metadata - загрзука
 
+import { ErrorWrapper } from "./error-wrapper";
+
 export const metadata: Metadata = {
     title: {
         default: "Next.js Tutorial - Codevolution",
@@ -30,7 +32,7 @@ export default function MainLayout({
                     <p>Main Header</p>
                     <Link href="/">Home</Link>
                 </header>
-                {children}
+                <ErrorWrapper>{children}</ErrorWrapper>
                 <footer
                     style={{
                         backgroundColor: "grey",
