@@ -9,7 +9,7 @@ export default function ProductDetailsLayout({
 }) {
     const random = getRandomInt(2);
     if (random === 1) {
-        throw new Error("Error loading review");
+        throw new Error("Error loading product");
     }
     return (
         <>
