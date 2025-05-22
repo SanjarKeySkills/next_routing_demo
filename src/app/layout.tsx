@@ -42,6 +42,7 @@ export default function MainLayout({
                     }}>
                     <p>Main Footer</p>
                     <p>Lorem ipsum dolor sit amet.</p>
+                    <h1>Check out files</h1>
                 </footer>
             </body>
         </html>
