@@ -41,6 +41,7 @@ export default function MainLayout({
                         fontWeight: "bold",
                     }}>
                     <p>Main Footer</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </footer>
             </body>
         </html>
