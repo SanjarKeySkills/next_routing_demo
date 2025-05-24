@@ -1,8 +1,6 @@
 import { Metadata } from "next";
-import Link from "next/link";
-// metadata - загрзука
-
 import { ErrorWrapper } from "./error-wrapper";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: {
