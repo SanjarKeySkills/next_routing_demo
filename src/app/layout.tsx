@@ -29,7 +29,7 @@ export default function MainLayout({
                         color: "blue",
                         fontWeight: "bold",
                     }}>
-                    <p>Main Header</p>
+                    <p>Main Header - App folder</p>
                     <Link href="/">Home</Link>
                 </header>
                 <ErrorWrapper>{children}</ErrorWrapper>

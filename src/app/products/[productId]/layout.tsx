@@ -14,7 +14,7 @@ export default function ProductDetailsLayout({
     return (
         <>
             {children}
-            <h2>Featured products</h2>
+            <h2>Featured products ProdictId folder</h2>
         </>
     );
 }

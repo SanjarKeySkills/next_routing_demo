@@ -15,7 +15,7 @@ export default function RootLayout({
                     backgroundColor: "green",
                     padding: "1rem",
                 }}>
-                <p>I am header for Product List</p>
+                <p>I am header for - Product folder</p>
             </header>
             {children}
         </>
