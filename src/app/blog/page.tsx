@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default async function Blog() {
     await new Promise((resolve) => {
         setTimeout(() => {
-            resolve("international delay");
+            resolve("international delay - Loading");
         }, 2000);
     });
     return (
