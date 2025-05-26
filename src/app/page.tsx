@@ -28,6 +28,8 @@ export default function Home() {
                     gap: "24px",
                 }}>
                 <Link href="/blog">Blog</Link>
+                <Link href="/complex-dashboard">Dashboard</Link>
+
                 <Link href="/products">Products</Link>
                 <Link href="/order-product">Order Product</Link>
                 <Link href="/order-product">Order Product2</Link>
