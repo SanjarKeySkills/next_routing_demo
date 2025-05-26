@@ -1,18 +1,25 @@
-import UserAnalytics from "path/to/UserAnalytics";
-import RevenueMetrics from "path/to/RevenueMetrics";
-import Notifications from "path/to/Notifications";
-
 export default function ComplexDashboardLayout({
     children,
+    users,
+    revenue,
+    notifications,
 }: {
     children: React.ReactNode;
+    users: React.ReactNode;
+    revenue: React.ReactNode;
+    notifications: React.ReactNode;
+    // React.ReactNode означает, что в children можно передать любые React-элементы или содержимое, которое может быть отображено.
 }) {
     return (
-        <>
-            <div>{children}</div> {/* Content from page.tsx */}
-            <UserAnalytics /> {/* Component for user analytics */}
-            <RevenueMetrics /> {/* Component from revenue metrics */}
-            <Notifications /> {/* Componnet from notifications */}
-        </>
+        <div>
+            <div>{children}</div>
+            <div>
+                <div>
+                    <div>{users}</div>
+                    <div>{revenue}</div>
+                </div>
+                <div>{notifications}</div>
+            </div>
+        </div>
     );
 }

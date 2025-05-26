@@ -1,3 +1,3 @@
 export default function UsersAnalytics() {
-    return <h1>UsersAnalytics</h1>;
+    return <div>User Analytics</div>;
 }
