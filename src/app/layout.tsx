@@ -27,10 +27,11 @@ export default function MainLayout({
                         color: "blue",
                         fontWeight: "bold",
                     }}>
-                    <p>Main Header - App folder</p>
+                    <p>Header - App folder</p>
                     <Link href="/">Home</Link>
                 </header>
-                <ErrorWrapper>{children}</ErrorWrapper>
+                {children}
+                {/* <ErrorWrapper>{children}</ErrorWrapper> */}
                 <footer
                     style={{
                         backgroundColor: "grey",
@@ -38,9 +39,7 @@ export default function MainLayout({
                         color: "yellow",
                         fontWeight: "bold",
                     }}>
-                    <p>Main Footer</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <h1>Check out files</h1>
+                    <p>Footer</p>
                 </footer>
             </body>
         </html>

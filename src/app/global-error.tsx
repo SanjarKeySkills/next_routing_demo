@@ -1,5 +1,4 @@
 "use client"; // error boundaries must be client component
-// import "./global.css"
 
 export default function GlobalError() {
     return (
