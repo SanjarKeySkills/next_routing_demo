@@ -12,7 +12,8 @@ export default function ComplexDashboardLayout({
     login: React.ReactNode;
     // React.ReactNode означает, что в children можно передать любые React-элементы или содержимое, которое может быть отображено.
 }) {
-    return (
+    const isLoggedIn = false;
+    return isLoggedIn ? (
         <div>
             <div>{children}</div>
             <div style={{ display: "flex" }}>
@@ -23,5 +24,7 @@ export default function ComplexDashboardLayout({
                 <div style={{ display: "flex", flex: 1 }}>{notifications}</div>
             </div>
         </div>
+    ) : (
+        login
     );
 }
