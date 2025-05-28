@@ -3,11 +3,13 @@ export default function ComplexDashboardLayout({
     users,
     revenue,
     notifications,
+    login,
 }: {
     children: React.ReactNode;
     users: React.ReactNode;
     revenue: React.ReactNode;
     notifications: React.ReactNode;
+    login: React.ReactNode;
     // React.ReactNode означает, что в children можно передать любые React-элементы или содержимое, которое может быть отображено.
 }) {
     return (
