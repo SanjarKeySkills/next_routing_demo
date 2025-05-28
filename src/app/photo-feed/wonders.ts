@@ -1,3 +1,11 @@
+type WonderImage = {
+    id: string;
+    name: string;
+    src: string;
+    author: string;
+    location: string;
+};
+
 const wondersImages: WonderImage[] = [
     {
         id: "1",
@@ -11,14 +19,14 @@ const wondersImages: WonderImage[] = [
         name: "Ecology two",
         src: "./photos/photo2.png",
         author: "Askat",
-        location: "Mramornoe",
+        location: "Ak-Zhol",
     },
     {
         id: "3",
         name: "Ecology three",
         src: "./photos/photo3.png",
         author: "Askat",
-        location: "Mramornoe",
+        location: "Chui",
     },
     {
         id: "4",
@@ -32,20 +40,20 @@ const wondersImages: WonderImage[] = [
         name: "Ecology five",
         src: "./photos/photo5.png",
         author: "Askat",
-        location: "Mramornoe",
+        location: "Ak-Zhol",
     },
     {
         id: "6",
         name: "Ecology six",
         src: "./photos/photo6.png",
         author: "Askat",
-        location: "Mramornoe",
+        location: "Frunze",
     },
     {
         id: "7",
         name: "Ecology seven",
         src: "./photos/photo7.png",
         author: "Askat",
-        location: "Mramornoe",
+        location: "KarlMarx",
     },
 ];
