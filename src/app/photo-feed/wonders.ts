@@ -57,3 +57,5 @@ const wondersImages: WonderImage[] = [
         location: "KarlMarx",
     },
 ];
+
+export default wondersImages;
