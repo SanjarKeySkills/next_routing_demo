@@ -32,7 +32,7 @@ export default function Home() {
 
                 <Link href="/products">Products</Link>
                 <Link href="/order-product">Order Product</Link>
-                <Link href="/order-product">Order Product2</Link>
+                <Link href="/ff1">FF1</Link>
             </div>
             <div
                 style={{
