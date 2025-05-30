@@ -1,4 +1,4 @@
-type WonderImage = {
+export type WonderImage = {
     id: string;
     name: string;
     src: string;
