@@ -1,3 +1,3 @@
 export default function FF1() {
-    return <h1>FF1 page</h1>;
+    return <h1>FF2 page</h1>;
 }
