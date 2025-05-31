@@ -16,6 +16,7 @@ export default async function PhotoPage({
                     <h1 className="text-center text-3xl font-bold my-4">
                         {photo.name}
                     </h1>
+                    <p>Lorem ipsum dolor sit.</p>
                 </div>
                 <Image
                     alt={photo.name}
