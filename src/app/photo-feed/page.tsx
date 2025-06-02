@@ -16,7 +16,8 @@ export default function PhotoFeed() {
             //  className="grid grid-cols-1 md:grid-cols-4 gap-4"
             >
                 {wonders.map(({ id, src, name }) => (
-                    <Link key={id} href={`photo-feed/${id}`}>
+                    // <Link key={id} href={`photo-feed/${id}`}>
+                    <Link key={id} href={`${id}`}>
                         <Image
                             alt={name}
                             src={src}
