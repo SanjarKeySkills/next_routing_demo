@@ -29,10 +29,9 @@ export default function Home() {
                 }}>
                 <Link href="/blog">Blog</Link>
                 <Link href="/complex-dashboard">Dashboard</Link>
-
                 <Link href="/products">Products</Link>
                 <Link href="/order-product">Order Product</Link>
-                <Link href="/ff1">FF1</Link>
+                <Link href="/photo-feed">Photo</Link>
             </div>
             <div
                 style={{

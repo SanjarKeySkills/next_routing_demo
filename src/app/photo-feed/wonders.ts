@@ -2,6 +2,7 @@ export type WonderImage = {
     id: string;
     name: string;
     src: string;
+    // src: StaticImageData;
     author: string;
     location: string;
 };
