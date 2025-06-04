@@ -12,6 +12,7 @@ export default function PhotoFeed() {
             >
                 New Wonders of ecology
             </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <div
             //  className="grid grid-cols-1 md:grid-cols-4 gap-4"
             >
