@@ -4,28 +4,14 @@ import Image from "next/image";
 
 export default function PhotoFeed() {
     return (
-        <main
-        // className="container mx-auto"
-        >
-            <h1
-            // className="text-center text-3xl font-bold my-4"
-            >
-                New Wonders of ecology
-            </h1>
+        <main>
+            <h1>New Wonders of ecology</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <div
-            //  className="grid grid-cols-1 md:grid-cols-4 gap-4"
-            >
+            <div>
                 {wonders.map(({ id, src, name }) => (
                     // <Link key={id} href={`photo-feed/${id}`}>
-                    <Link key={id} href={`${id}`}>
-                        <Image
-                            alt={name}
-                            src={src}
-                            width={400}
-                            height={400}
-                            // className="w-full object-cover aspect-square"
-                        />
+                    <Link key={id} href={`photo-feed/${id}`}>
+                        <Image alt={name} src={src} width={400} height={400} />
                     </Link>
                 ))}
             </div>
