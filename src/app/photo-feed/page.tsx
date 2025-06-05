@@ -9,8 +9,7 @@ export default function PhotoFeed() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <div>
                 {wonders.map(({ id, src, name }) => (
-                    // <Link key={id} href={`photo-feed/${id}`}>
-                    <Link key={id} href={`photo-feed/${id}`}>
+                    <Link key={id} href={`/photo-feed/${id}`}>
                         <Image alt={name} src={src} width={400} height={400} />
                     </Link>
                 ))}
