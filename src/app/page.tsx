@@ -10,6 +10,7 @@ export default function Home() {
                 fontWeight: "bold",
             }}>
             <h2>Welcome home!</h2>
+            <Link href="/photo-feed">Photo</Link>
             <div
                 style={{
                     display: "flex",
